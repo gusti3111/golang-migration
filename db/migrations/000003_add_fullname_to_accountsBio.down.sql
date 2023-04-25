@@ -1,0 +1,1 @@
+ALTER TABLE accountsBio DROP COLUMN fullname;
