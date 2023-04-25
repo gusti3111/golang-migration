@@ -23,7 +23,8 @@ import (
 func main() {
 	r := gin.Default()
 
-	conn := "postgres://postgres:12345@localhost:5438/golangdb?sslmode=disable"
+	// conn := "postgres://postgres:12345@localhost:5438/golangdb?sslmode=disable"
+	conn := "postgresql://postgres:Fou8Fa145Pf0KNTemhHW@containers-us-west-59.railway.app:5575/railway"
 	db, err := gorm.Open(postgres.Open(conn), &gorm.Config{})
 	if err != nil {
 		panic(err)
